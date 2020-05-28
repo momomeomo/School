@@ -1,0 +1,10 @@
+CREATE TABLE game (id INTEGER PRIMARY KEY, name TEXT, score INTEGER, times TEXT, wins INTEGER, losses INTEGER);
+
+INSERT INTO game VALUES (1, "Emily", 35, "1:30", 7, 3);
+INSERT INTO game VALUES (2, "John", 77, "1:27", 5, 5);
+INSERT INTO game VALUES (3, "Karen", 81, "2:22", 2, 8);
+INSERT INTO game VALUES (4, "Micheal", 32, "1:51", 4, 6);
+INSERT INTO game VALUES (5, "Julia", 49, "1:49", 9, 1);
+
+SELECT * FROM game ORDER BY score;
+SELECT SUM(score) FROM game;
